@@ -1,7 +1,7 @@
 
 var exec = require('cordova/exec');
 
-var PLUGIN_NAME = 'MyCordovaPlugin';
+var PLUGIN_NAME = 'FmpCordovaAAPlugin';
 
 var MyCordovaPlugin = {
   echo: function(phrase, cb) {
