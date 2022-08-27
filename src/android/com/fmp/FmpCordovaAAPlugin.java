@@ -30,12 +30,25 @@ public class FmpCordovaAAPlugin extends CordovaPlugin {
       String phrase = args.getString(0);
       // Echo back the first argument
       Log.d(TAG, phrase);
+      final PluginResult result = new PluginResult(PluginResult.Status.OK, phrase);
+      callbackContext.sendPluginResult(result);
     } else if(action.equals("getDate")) {
         // An example of returning data back to the web layer
         final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
         callbackContext.sendPluginResult(result);
+    } else if (action.equals("playlist")) {
+        JSONArray playlist = args.getJSONArray(0);
+        this.updatePlaylist(playlist);
+    } else if (action.equals("playing")) {
+
     }
     return true;
+  }
+
+  public void updatePlaylist(JSONArray playlist) {
+    for(int i=0;i<playlist.length();i++) {
+        JSONObject item = playlist.getJSONObject(i);
+    }
   }
 
 }
