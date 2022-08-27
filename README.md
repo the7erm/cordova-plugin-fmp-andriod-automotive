@@ -8,5 +8,5 @@ This is a simple starting point for building a Cordova plugin on iOS and Android
 
 # About
 
-This plugin is still in development don't use it.
+**This plugin is still in development don't use it.**
 
