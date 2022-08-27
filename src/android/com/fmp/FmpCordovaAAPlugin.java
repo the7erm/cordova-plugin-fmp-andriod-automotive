@@ -1,6 +1,6 @@
 /**
  */
-package android.com.fmp;
+package com.fmp;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
