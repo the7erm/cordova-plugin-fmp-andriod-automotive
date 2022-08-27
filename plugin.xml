@@ -1,35 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
-    id="my-cordova-plugin"
-    version="1.0.0">
+    id="fmp-andriod-automotive"
+    version="0.0.1">
     <name>Cordova Plugin Template</name>
     <description></description>
     <license>MIT</license>
     <keywords></keywords>
-    <repo>https://github.com/driftyco/cordova-plugin-template.git</repo>
-    <issue>https://github.com/driftyco/cordova-plugin-template/issues</issue>
+    <repo>https://github.com/the7erm/cordova-plugin-fmp-andriod-automotive.git</repo>
+    <issue>https://github.com/the7erm/cordova-plugin-fmp-andriod-automotive/issues</issue>
 
     <!-- android -->
     <platform name="android">
       <js-module src="www/plugin.js" name="plugin">
         <runs/>
 
-        <!-- This is the window variable name you want, like window.MyCordovaPlugin -->
-        <clobbers target="MyCordovaPlugin" />
+        <!-- This is the window variable name you want, like window.FmpCordovaAAPlugin -->
+        <clobbers target="FmpCordovaAAPlugin" />
       </js-module>
       <config-file target="res/xml/config.xml" parent="/*">
-        <feature name="MyCordovaPlugin">
-          <param name="android-package" value="com.example.MyCordovaPlugin" />
+        <feature name="FmpCordovaAAPlugin">
+          <param name="android-package" value="com.fmp.FmpCordovaAAPlugin" />
           <param name="onload" value="true" />
         </feature>
       </config-file>
 
-      <source-file src="src/android/com/example/MyCordovaPlugin.java" target-dir="src/com/example/" />
+      <source-file src="src/android/com/fmp/FmpCordovaAAPlugin.java" target-dir="src/com/fmp/" />
     </platform>
 
     <!-- ios -->
-    <platform name="ios">
+    <!-- <platform name="ios">
         <js-module src="www/plugin.js" name="plugin">
             <runs/>
             <clobbers target="MyCordovaPlugin" />
@@ -42,5 +42,5 @@
 
         <header-file src="src/ios/MyCordovaPlugin.h" />
         <source-file src="src/ios/MyCordovaPlugin.m" />
-    </platform>
+    </platform> -->
 </plugin>
