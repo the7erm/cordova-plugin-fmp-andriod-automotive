@@ -1,6 +1,6 @@
 /**
  */
-package com.example;
+package android.com.fmp;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaInterface;
@@ -30,10 +30,6 @@ public class FmpCordovaAAPlugin extends CordovaPlugin {
       String phrase = args.getString(0);
       // Echo back the first argument
       Log.d(TAG, phrase);
-    } else if(action.equals("getDate")) {
-      // An example of returning data back to the web layer
-      final PluginResult result = new PluginResult(PluginResult.Status.OK, (new Date()).toString());
-      callbackContext.sendPluginResult(result);
     }
     return true;
   }
