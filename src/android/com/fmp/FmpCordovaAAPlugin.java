@@ -47,7 +47,12 @@ public class FmpCordovaAAPlugin extends CordovaPlugin {
 
   public void updatePlaylist(JSONArray playlist) {
     for(int i=0;i<playlist.length();i++) {
-        JSONObject item = playlist.getJSONObject(i);
+        try {
+            JSONObject item = playlist.getJSONObject(i);
+        } catch(JSONException e) {
+
+        }
+
     }
   }
 
